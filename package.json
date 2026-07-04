@@ -1,0 +1,12 @@
+{
+  "name": "school-moa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "School-Moa local proxy server for secure NEIS API usage",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "redis": "^4.7.1"
+  }
+}

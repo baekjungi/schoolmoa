@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스쿨모아</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260621" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1 id="headerTitle">🏠 홈</h1>
+        <p id="headerDesc">오늘 필요한 정보를 빠르게 확인하세요.</p>
+      </header>
+
+      <section id="homeScreen" class="screen"></section>
+      <section id="timetableScreen" class="screen hidden"></section>
+      <section id="mealScreen" class="screen hidden"></section>
+      <section id="boardScreen" class="screen hidden"></section>
+      <section id="profileScreen" class="screen hidden"></section>
+
+      <nav class="tabbar" aria-label="하단 탭">
+        <button class="tab-btn is-active" data-tab="home">🏠<span>홈</span></button>
+        <button class="tab-btn" data-tab="timetable">📅<span>시간표</span></button>
+        <button class="tab-btn" data-tab="meal">🍱<span>급식</span></button>
+        <button class="tab-btn" data-tab="board">💬<span>게시판</span></button>
+        <button class="tab-btn" data-tab="profile">👤<span>내 정보</span></button>
+      </nav>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="app.js?v=20260621"></script>
+  </body>
+</html>
